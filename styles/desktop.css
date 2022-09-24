@@ -38,7 +38,11 @@ p {
   padding-left: 0px;
   background-position-x: 0%;
   background-position-y: 100%;
-  color: white;
+  color: #c2dbba;
+}
+.hero .container header .logo {
+  width: 50px;
+  height: 50px;
 }
 .hero .container header .hamburger {
   display: none;

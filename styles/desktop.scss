@@ -64,7 +64,7 @@
                 width: 150px;
                 height: 50px;
                 margin-top: 30px;
-                background-color: #C2DBBAff;
+                background-color: $tea-green;
 
             }
 
@@ -77,30 +77,32 @@
 .hero-categories {
     width: 100%;
     height: 350px;
-    padding: 70px 200px ;
-    background-color: #C2DBBAff;
+    padding: 70px 200px;
+    background-color: $tea-green;
 
     .categories {
         display: flex;
         justify-content: space-between;
-        
+
 
         .category {
             position: relative;
             width: 340px;
             height: 190px;
-            background-color: #73C088;
-            border-radius: 10%;
+            background-color: $green4;
+            border-radius: 20px;
             text-align: center;
-            
+
             img {
                 position: absolute;
                 left: 25%;
                 top: -70px;
-                height: auto; ;
+                height: auto;
+
                 width: 185px;
-                
+
             }
+
             h4 {
                 padding-top: $xxl;
             }
@@ -108,9 +110,102 @@
 
     }
 }
+
 .products {
     width: 100%;
-    height: 500px;
-    background-color:#C2DBBAff ;
-    padding: 70px 200px ;
+    height: 2000px;
+    background-color: #C2DBBAff;
+    padding: 70px 200px;
+    
+
+    .zzplant {
+        display: flex;
+        justify-content: space-between;
+        background-color: $green6;
+        height: 560px;
+        padding: $xl $mid;
+        border-radius: 20px;
+        margin-bottom: $mid;
+
+        img {
+            width: 500px;
+            height: auto;
+        }
+
+        .zzplant-description {
+            text-align: center;
+            align-content: center;
+            color: $green3;
+
+            button {
+                width: 150px;
+                height: 50px;
+                margin-top: 30px;
+                background-color: $tea-green;
+
+            }
+        }
+
+    }
+
+    .snake-plant {
+        background-image: url("/images/test.jpg");
+        background-size: cover;
+        background-position-y: 100%;
+        height: 340px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: $mid;
+        color: $green6;
+        margin-bottom: $mid;
+        
+
+        button {
+            width: 150px;
+            height: 50px;
+            margin-top: 30px;
+            background-color: $tea-green;
+
+        }
+    }
+
+    .pothos {
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+
+        border-radius: 20px;
+        background-color: $tea-green;
+
+        img {
+            height: auto;
+            width: 500px;
+            border-radius: 20px;
+
+        }
+
+        .pothos-description {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            color: $green3;
+            background-color: $green4;
+            border-radius: 20px;
+
+        }
+
+        button {
+            width: 150px;
+            height: 50px;
+            margin-top: 30px;
+            background-color: $tea-green;
+
+        }
+    }
 }

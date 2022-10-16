@@ -20,6 +20,7 @@ h2 {
 
 h3 {
   font-size: 2rem;
+  margin: 0;
 }
 
 p {
@@ -112,7 +113,6 @@ p {
 
 .products {
   width: 100%;
-  height: 2000px;
   background-color: #c2dbba;
   padding: 70px 200px;
 }
@@ -167,23 +167,43 @@ p {
   border-radius: 20px;
   background-color: #c2dbba;
 }
-.products .pothos img {
-  height: auto;
-  width: 500px;
+.products .pothos .pothos-background {
+  background-image: url("/images/pothos-background.jpg");
+  background-size: cover;
   border-radius: 20px;
+  width: 49%;
 }
 .products .pothos .pothos-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  width: 49%;
   color: #73C088;
   background-color: #397D54;
   border-radius: 20px;
+  padding: 30px;
 }
 .products .pothos button {
   width: 150px;
   height: 50px;
   margin-top: 30px;
   background-color: #c2dbba;
+}
+
+.shop-description {
+  background-color: #c2dbba;
+  padding: 70px 200px;
+  display: flex;
+  color: #054A29;
+}
+.shop-description .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.shop-description img {
+  border-radius: 20px;
+  width: 500px;
 }/*# sourceMappingURL=desktop.css.map */

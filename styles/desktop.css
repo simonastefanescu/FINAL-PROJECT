@@ -43,12 +43,13 @@ p {
 }
 .hero .container {
   position: relative;
-  padding: 70px 200px;
+  padding: 0 200px;
 }
 .hero .container header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(194, 219, 186, 0.3);
 }
 .hero .container header .logo {
   width: 100px;
@@ -63,19 +64,22 @@ p {
 .hero .container header nav ul {
   list-style: none;
   display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  padding: 0;
+}
+.hero .container header .shop {
+  display: flex;
   gap: 15px;
 }
 .hero .container .text {
-  width: 300px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  text-align: end;
   width: 600px;
   height: 400px;
-  position: absolute;
-  right: 100px;
-  top: 300px;
+  transform: translateX(527px) translateY(152px);
+  text-align: right;
+  align-items: flex-end;
 }
 .hero .container .text button {
   width: 150px;

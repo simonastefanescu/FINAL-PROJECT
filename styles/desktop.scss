@@ -21,11 +21,14 @@
 
     .container {
         position: relative;
+        padding: 70px 200px;
+
 
 
         header {
             display: flex;
             align-items: center;
+            justify-content: space-between;
 
             .logo {
                 width: 100px;
@@ -231,4 +234,52 @@
         width: 500px;
     }
 
+}
+
+footer {
+    width: 100%;
+    background-color: $green6;
+    height: 365px;
+    padding: 0 200px;
+    color: $tea-green;
+
+    .nav-footer {
+        display: flex;
+        align-items: center;
+        
+        justify-content: space-between;
+
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+
+        nav {
+            display: block;
+
+            ul {
+                list-style: none;
+                display: flex;
+                gap: 15px;
+            }
+        }
+
+    }
+    .final-description {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        margin: $xl 0;
+        
+        p {
+            width: 560px;
+            text-align: left;
+           
+        }
+        .social {
+            display: flex;
+            gap: 15px;
+        }
+    }
 }

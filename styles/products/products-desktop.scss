@@ -1,0 +1,134 @@
+@import "../base";
+@import "../colours";
+@import "../typography";
+@import "../spacings";
+
+.hero {
+    border: 1px solid black;
+    width: 100%;
+    height: 729px;
+    background-color: black;
+
+    color: #C2DBBAff;
+
+    .container {
+        position: relative;
+        padding: 0 200px;
+
+
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(194, 219, 186, 0.3);
+
+            .logo {
+                width: 100px;
+                height: 100px;
+            }
+
+            .hamburger {
+                display: none;
+            }
+
+            nav {
+                display: block;
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    gap: $mid;
+                    justify-content: space-between;
+
+                    padding: 0;
+                }
+            }
+
+            .shop {
+                display: flex;
+                gap: 15px;
+            }
+
+        }
+
+
+
+
+    }
+
+}
+
+    
+
+    .shop-description {
+        background-color: $tea-green;
+        padding: 70px 200px;
+        display: flex;
+        color: $green6;
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+        }
+
+        img {
+            border-radius: 20px;
+            width: 500px;
+        }
+
+    }
+
+    footer {
+        width: 100%;
+        background-color: $green6;
+        height: 365px;
+        padding: 0 200px;
+        color: $tea-green;
+
+        .nav-footer {
+            display: flex;
+            align-items: center;
+
+            justify-content: space-between;
+
+            .logo {
+                width: 100px;
+                height: 100px;
+            }
+
+            nav {
+                display: block;
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    gap: 15px;
+                }
+            }
+
+        }
+
+        .final-description {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+            margin: $xl 0;
+
+            p {
+                width: 560px;
+                text-align: left;
+
+            }
+
+            .social {
+                display: flex;
+                gap: 15px;
+            }
+        }
+    }
+

@@ -1,1 +1,124 @@
-/*# sourceMappingURL=products-desktop.css.map */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.hero {
+  border: 1px solid black;
+  width: 100%;
+  height: 729px;
+  background-color: black;
+  color: #c2dbba;
+}
+.hero .container {
+  position: relative;
+  padding: 0 200px;
+}
+.hero .container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(194, 219, 186, 0.3);
+}
+.hero .container header .logo {
+  width: 100px;
+  height: 100px;
+}
+.hero .container header .hamburger {
+  display: none;
+}
+.hero .container header nav {
+  display: block;
+}
+.hero .container header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  padding: 0;
+}
+.hero .container header .shop {
+  display: flex;
+  gap: 15px;
+}
+
+.shop-description {
+  background-color: #c2dbba;
+  padding: 70px 200px;
+  display: flex;
+  color: #054A29;
+}
+.shop-description .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.shop-description img {
+  border-radius: 20px;
+  width: 500px;
+}
+
+footer {
+  width: 100%;
+  background-color: #054A29;
+  height: 365px;
+  padding: 0 200px;
+  color: #c2dbba;
+}
+footer .nav-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .nav-footer .logo {
+  width: 100px;
+  height: 100px;
+}
+footer .nav-footer nav {
+  display: block;
+}
+footer .nav-footer nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+footer .final-description {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin: 60px 0;
+}
+footer .final-description p {
+  width: 560px;
+  text-align: left;
+}
+footer .final-description .social {
+  display: flex;
+  gap: 15px;
+}/*# sourceMappingURL=products-desktop.css.map */

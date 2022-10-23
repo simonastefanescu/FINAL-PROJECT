@@ -60,6 +60,13 @@ p {
   justify-content: space-between;
   padding: 0;
 }
+.hero .container header nav ul li a {
+  color: #c2dbba;
+  text-decoration: none;
+}
+.hero .container header nav ul li a:active, .hero .container header nav ul li a:visited {
+  color: #c2dbba;
+}
 .hero .container header .shop {
   display: flex;
   gap: 15px;
@@ -72,10 +79,22 @@ p {
 .products {
   padding: 0 200px;
   background-color: #c2dbba;
-  height: 750px;
 }
 .products .search {
   padding-top: 30px;
+}
+.products .item-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+.products .item-list .item {
+  width: 600px;
+  height: 610px;
+}
+.products .item-list .item img {
+  width: 390px;
+  height: 400px;
 }
 
 .shop-description {

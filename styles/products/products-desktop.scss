@@ -41,6 +41,19 @@
                     justify-content: space-between;
 
                     padding: 0;
+
+                    li {
+                        a {
+                            color: $tea-green;
+                            text-decoration: none;
+
+                            &:active,
+                            &:visited {
+                                color: $tea-green
+                            }
+                        }
+
+                    }
                 }
             }
 
@@ -55,6 +68,7 @@
 
 
     }
+
     h2 {
         color: $tea-green;
         text-align: center;
@@ -65,84 +79,102 @@
 .products {
     padding: 0 200px;
     background-color: $tea-green;
-    //de sters height
-    height: 750px;
+    
+
     .search {
         padding-top: $mid;
     }
-    
+
+    .item-list {
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+        // gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        
+
+        .item {
+            width: 600px;
+            height: 610px;
+            img {
+                width: 390px;
+                height: 400px
+            }
+        }
+    }
 }
 
-    
 
-    .shop-description {
-        background-color: $tea-green;
-        padding: 70px 200px;
+
+.shop-description {
+    background-color: $tea-green;
+    padding: 70px 200px;
+    display: flex;
+    color: $green6;
+
+    .description {
         display: flex;
-        color: $green6;
-
-        .description {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-
-        }
-
-        img {
-            border-radius: 20px;
-            width: 500px;
-        }
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
 
     }
 
-    footer {
-        width: 100%;
-        background-color: $green6;
-        height: 365px;
-        padding: 0 200px;
-        color: $tea-green;
+    img {
+        border-radius: 20px;
+        width: 500px;
+    }
 
-        .nav-footer {
-            display: flex;
-            align-items: center;
+}
 
-            justify-content: space-between;
+footer {
+    width: 100%;
+    background-color: $green6;
+    height: 365px;
+    padding: 0 200px;
+    color: $tea-green;
 
-            .logo {
-                width: 100px;
-                height: 100px;
-            }
+    .nav-footer {
+        display: flex;
+        align-items: center;
 
-            nav {
-                display: block;
+        justify-content: space-between;
 
-                ul {
-                    list-style: none;
-                    display: flex;
-                    gap: 15px;
-                }
-            }
-
+        .logo {
+            width: 100px;
+            height: 100px;
         }
 
-        .final-description {
-            display: flex;
-            justify-content: space-between;
-            text-align: center;
-            align-items: center;
-            margin: $xl 0;
+        nav {
+            display: block;
 
-            p {
-                width: 560px;
-                text-align: left;
-
-            }
-
-            .social {
+            ul {
+                list-style: none;
                 display: flex;
                 gap: 15px;
             }
         }
+
     }
 
+    .final-description {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        margin: $xl 0;
+
+        p {
+            width: 560px;
+            text-align: left;
+
+        }
+
+        .social {
+            display: flex;
+            gap: 15px;
+        }
+    }
+}

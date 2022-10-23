@@ -68,6 +68,13 @@ p {
   justify-content: space-between;
   padding: 0;
 }
+.hero .container header nav ul li a {
+  color: #c2dbba;
+  text-decoration: none;
+}
+.hero .container header nav ul li a:active, .hero .container header nav ul li a:visited {
+  color: #c2dbba;
+}
 .hero .container header .shop {
   display: flex;
   gap: 15px;

@@ -1,0 +1,17 @@
+[
+    {
+        "id":1,
+        "title":"Alocasia Black Velvet",
+        "price":15,
+        "currency":"dollars",
+        "description":"test",
+    }
+
+{
+    "id":2,
+    "title":"ZZ Plant",
+    "price":15,
+    "currency":"dollars",
+    "description":"test",
+}
+]

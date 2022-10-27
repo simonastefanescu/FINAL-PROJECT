@@ -5,7 +5,7 @@ const productList = [
         "price": 15,
         "currency": "dollars",
         "description": "test",
-        "image": "/images/product 1 alocasia black velvet/main.jpg"
+        "image": "/images/product 1 alocasia black velvet/main.webp"
     }
     ,
     {
@@ -18,24 +18,24 @@ const productList = [
     },
     {
         "id": 3,
-        "title": "Alocasia Black Velvet",
+        "title": "String of hearts",
         "price": 15,
         "currency": "dollars",
         "description": "test",
-        "image": "/images/product 1 alocasia black velvet/main.jpg"
+        "image": "/images/product 3 String of hearts/main.jpg"
     }
-    ,{
+    , {
         "id": 4,
-        "title": "Alocasia Black Velvet",
+        "title": "Pothos Silver Satin",
         "price": 15,
         "currency": "dollars",
         "description": "test",
-        "image": "/images/product 1 alocasia black velvet/main.jpg"
+        "image": "/images/product 4 Silver Satin Pothos/main.jpg"
     }
     ,
     {
         "id": 5,
-        "title": "Alocasia Black Velvet",
+        "title": "Calathea Orbifolia",
         "price": 15,
         "currency": "dollars",
         "description": "test",
@@ -44,7 +44,7 @@ const productList = [
     ,
     {
         "id": 6,
-        "title": "Alocasia Black Velvet",
+        "title": "Calathea Zebrina",
         "price": 15,
         "currency": "dollars",
         "description": "test",
@@ -68,7 +68,7 @@ for (let i = 0; i < productList.length; i++) {
     image.setAttribute("src", productList[i].image);
     image.setAttribute("alt", "alocasia photo")
     item.appendChild(image);
-    ""
+
     let title = document.createElement("h2")
     title.classList.add("itemTitle")
     title.textContent = productList[i].title

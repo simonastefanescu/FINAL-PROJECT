@@ -79,7 +79,7 @@
 .products {
     padding: 0 200px;
     background-color: $tea-green;
-    
+
 
     .search {
         padding-top: $mid;
@@ -93,15 +93,39 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         text-align: center;
-        
+        margin-top: $mid;
+
 
         .item {
             width: 600px;
             height: 610px;
+            margin-bottom: $xl;
+
             img {
                 width: 390px;
-                height: 400px
+                height: 400px;
+                border-radius: 20px;
             }
+
+            .itemTitle, .price {
+                color: $green6;
+            }
+            
+
+            p {
+                font-size: 1.5rem;
+                margin: $baseSpacing 0 $baseSpacing 0;
+            }
+
+            button {
+                width: 180px;
+                height: 45px;
+                margin-top: $baseSpacing;
+                background-color: $green6;
+                color: $tea-green;
+                font-size: 1.2rem;
+            }
+
         }
     }
 }

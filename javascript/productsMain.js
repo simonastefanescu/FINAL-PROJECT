@@ -22,7 +22,7 @@ const productList = [
         "price": 15,
         "currency": "$",
         "description": "test",
-        "image": "/images/product 3 String of hearts/main.jpg"
+        "image": "/images/product 3 String of hearts/main.webp"
     }
     , {
         "id": 4,
@@ -62,6 +62,7 @@ for (let i = 0; i < productList.length; i++) {
     let item = document.createElement('div');
     item.classList.add('item');
     itemList.appendChild(item);
+    item.setAttribute("id", productList[i].id)
 
 
     let image = document.createElement("img")

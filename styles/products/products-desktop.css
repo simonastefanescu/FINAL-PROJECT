@@ -83,6 +83,13 @@ p {
 .products .search {
   padding-top: 30px;
 }
+.products .search #searchbox {
+  border-radius: 20px;
+  background-color: #c2dbba;
+  color: #054A29;
+  border-color: #054A29;
+  border-style: solid;
+}
 .products #item-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -102,7 +109,8 @@ p {
   height: 400px;
   border-radius: 20px;
 }
-.products #item-list .item .itemTitle, .products #item-list .item .price {
+.products #item-list .item .itemTitle,
+.products #item-list .item .price {
   color: #054A29;
 }
 .products #item-list .item p {

@@ -83,6 +83,14 @@
 
     .search {
         padding-top: $mid;
+
+        #searchbox {
+            border-radius: 20px;
+            background-color: $tea-green;
+            color: $green6;
+            border-color: $green6;
+            border-style: solid;
+        }
     }
 
     #item-list {
@@ -101,7 +109,9 @@
             height: 610px;
             margin-bottom: $xl;
 
-            &.is-hidden { display: none; }
+            &.is-hidden {
+                display: none;
+            }
 
             img {
                 width: 390px;
@@ -109,10 +119,11 @@
                 border-radius: 20px;
             }
 
-            .itemTitle, .price {
+            .itemTitle,
+            .price {
                 color: $green6;
             }
-            
+
 
             p {
                 font-size: 1.5rem;

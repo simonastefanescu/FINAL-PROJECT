@@ -5,7 +5,7 @@ const productList = [
         "price": 15,
         "currency": "$",
         "description": "test",
-        "image": "/images/product 1 alocasia black velvet/main.webp"
+        "image": "/images/product 1 alocasia black velvet/mainfinal.webp"
     }
     ,
     {
@@ -77,7 +77,7 @@ for (let i = 0; i < productList.length; i++) {
 
     let price = document.createElement("p")
     price.classList.add("price")
-    price.textContent = productList[i].price+ productList[i].currency
+    price.textContent = productList[i].price + productList[i].currency
     item.appendChild(price);
 
     let button = document.createElement("button")
@@ -88,3 +88,38 @@ for (let i = 0; i < productList.length; i++) {
 
 }
 
+//filter 
+function liveSearch() {
+    let items = document.querySelectorAll(".item")
+    let searchInput = document.getElementById("searchbox").value;
+
+    for (let i = 0; i < items.length; i++) {
+        if (items[i].innerText.toLowerCase().includes(searchInput.toLowerCase())) {
+            items[i].classList.remove("is-hidden");
+        }
+        else {
+            items[i].classList.add("is-hidden");
+        }
+    }
+
+}
+
+// function liveSearch() {
+//     // Locate the card elements
+//     let cards = document.querySelectorAll('.cards')
+//     // Locate the search input
+//     let search_query = document.getElementById("searchbox").value;
+//     // Loop through the cards
+//     for (var i = 0; i < cards.length; i++) {
+//       // If the text is within the card...
+//       if(cards[i].innerText.toLowerCase()
+//         // ...and the text matches the search query...
+//         .includes(search_query.toLowerCase())) {
+//           // ...remove the `.is-hidden` class.
+//           cards[i].classList.remove("is-hidden");
+//       } else {
+//         // Otherwise, add the class.
+//         cards[i].classList.add("is-hidden");
+//       }
+//     }
+//   }

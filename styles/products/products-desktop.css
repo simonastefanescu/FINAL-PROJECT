@@ -94,6 +94,9 @@ p {
   height: 610px;
   margin-bottom: 60px;
 }
+.products #item-list .item.is-hidden {
+  display: none;
+}
 .products #item-list .item img {
   width: 390px;
   height: 400px;

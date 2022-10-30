@@ -101,6 +101,8 @@
             height: 610px;
             margin-bottom: $xl;
 
+            &.is-hidden { display: none; }
+
             img {
                 width: 390px;
                 height: 400px;

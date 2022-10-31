@@ -21,7 +21,7 @@ const productList = [
         "title": "String of hearts",
         "price": 15,
         "currency": "$",
-        "description": "test",
+        "description": "Zamioculcas zamiifolia, affectionately called the ZZ plant or Zanzibar Gem, is a tropical plant in the aroid family, Araceae. It is native to Zanzibar, Kenya, and Eastern Africa. You might spot large potato-like rhizomes under the surface of its potting mix. Having evolved in drier conditions than most other aroids, these plants have evolved rhizomes that store water to help the ZZ plant survive drought in its natural environment. The rhizomes are actually underground stems, and what you see above ground are the stems' leaves. Using these underground rhizomes, the plant slowly creeps over time to new locations, spawning new aboveground leaves along the way.",
         "image": "/images/product 3 String of hearts/main.webp"
     }
     , {
@@ -53,6 +53,9 @@ const productList = [
     ,
 ]
 
+window.localStorage.setItem("productList", JSON.stringify(productList));
+let list = window.localStorage.getItem("productList");
+JSON.parse(list);
 
 const itemList = document.getElementById("item-list")
 
@@ -80,10 +83,14 @@ for (let i = 0; i < productList.length; i++) {
     price.textContent = productList[i].price + productList[i].currency
     item.appendChild(price);
 
+    let anchor=document.createElement("a")
+    anchor.setAttribute("href", "./product.html?id=" + productList[i].id);
+    item.appendChild(anchor)
+    
     let button = document.createElement("button")
 
     button.textContent = "See product"
-    item.appendChild(button);
+    anchor.appendChild(button);
 
 
 }
@@ -99,7 +106,7 @@ function liveSearch() {
         }
         else {
             items[i].classList.add("is-hidden");
-            
+
         }
     }
 

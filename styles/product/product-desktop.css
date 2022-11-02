@@ -76,11 +76,62 @@ p {
   text-align: center;
 }
 
+.hero-product-details {
+  width: 100%;
+  padding-top: 60px;
+  background-color: #c2dbba;
+}
+.hero-product-details .product-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 200px;
+  color: #054A29;
+}
+.hero-product-details .product-details img {
+  width: 540px;
+  height: 560px;
+  border-radius: 20px;
+}
+.hero-product-details .product-details .details {
+  width: 445px;
+  height: 410px;
+}
+.hero-product-details .product-details .details p {
+  margin: 60px 0;
+}
+.hero-product-details .product-details .details button {
+  width: 180px;
+  height: 45px;
+  margin-top: 15px;
+  background-color: #054A29;
+  color: #c2dbba;
+  font-size: 1.2rem;
+  margin: 30px 0;
+}
+.hero-product-details .gallery {
+  padding: 0 200px;
+  width: 100%;
+  gap: 1rem;
+}
+.hero-product-details .gallery .Image {
+  width: 400px;
+  height: 400px;
+}
+.hero-product-details .gallery .Image.tall {
+  width: 400px;
+  height: 400px;
+}
+.hero-product-details .gallery .tall {
+  grid-row: span 2/auto;
+}
+
 .shop-description {
   background-color: #c2dbba;
   padding: 70px 200px;
   display: flex;
   color: #054A29;
+  align-items: center;
 }
 .shop-description .description {
   display: flex;

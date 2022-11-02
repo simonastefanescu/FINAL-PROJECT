@@ -76,7 +76,69 @@
 
 }
 
+.hero-product-details {
+    width: 100%;
+    padding-top: $xl;
+    background-color: $tea-green;
 
+    .product-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 200px;
+        color: $green6;
+
+        img {
+            width: 540px;
+            height: 560px;
+            border-radius: 20px;
+        }
+
+        .details {
+            width: 445px;
+            height: 410px;
+
+            p {
+                margin: $xl 0;
+            }
+
+            button {
+                width: 180px;
+                height: 45px;
+                margin-top: $baseSpacing;
+                background-color: $green6;
+                color: $tea-green;
+                font-size: 1.2rem;
+                margin: $mid 0;
+            }
+        }
+    }
+
+    .gallery {
+        padding: 0 200px;
+        width: 100%;
+        // display: grid;
+        gap: 1rem;
+        
+
+
+        .Image {
+            width: 400px;
+            height: 400px;
+
+            &.tall {
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+        .tall {
+            grid-row: span 2 / auto;
+        }
+    }
+
+
+}
 
 
 
@@ -85,6 +147,7 @@
     padding: 70px 200px;
     display: flex;
     color: $green6;
+    align-items: center;
 
     .description {
         display: flex;

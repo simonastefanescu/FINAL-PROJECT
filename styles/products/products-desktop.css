@@ -131,6 +131,7 @@ p {
   padding: 70px 200px;
   display: flex;
   color: #054A29;
+  align-items: center;
 }
 .shop-description .description {
   display: flex;

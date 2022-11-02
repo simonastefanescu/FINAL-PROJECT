@@ -12,3 +12,4 @@ const foundProduct = listProducts.find((item) => {
 })
 
 console.log(foundProduct);
+

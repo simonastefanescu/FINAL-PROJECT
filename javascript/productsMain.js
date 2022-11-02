@@ -13,7 +13,7 @@ const productList = [
         "title": "ZZ Plant",
         "price": 20,
         "currency": "$",
-        "description": "test",
+        "description": "The ZZ Plant is characterized by its waxy green leaves above the surface of its potting mix, and its large potato-like rhizomes underneath. These rhizomes store water, making the ZZ a hardy, drought-tolerant houseplant that only needs water every few weeks.",
         "image": "/images/product 2 zz plant/main.jpg"
     },
     {

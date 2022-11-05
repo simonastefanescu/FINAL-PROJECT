@@ -5,7 +5,10 @@ const productList = [
         "price": 15,
         "currency": "$",
         "description": "test",
-        "image": "/images/product 1 alocasia black velvet/mainfinal.webp"
+        "image": "/images/product 1 alocasia black velvet/mainfinal.webp",
+        "gallery-1": "./images/product 2 zz plant/annie-spratt-RDE59yq9pRw-unsplash.jpg",
+        "gallery-2": "./images/product 2 zz plant/feey-1gwjE0c3PSQ-unsplash.jpg",
+        "gallery-3": "./images/product 2 zz plant/feey-h5hS_f99Vgo-unsplash.jpg"
     }
     ,
     {

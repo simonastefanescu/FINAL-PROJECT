@@ -26,6 +26,14 @@ description.textContent = foundProduct.description
 price.textContent = foundProduct.price + foundProduct.currency
 
 //populating gallery 
+const firstImage=document.getElementById("gallery1");
+const secondImage=document.getElementById("gallery2");
+const thirdImage=document.getElementById("gallery3");
+
+firstImage.setAttribute("src", foundProduct.gallery1);
+secondImage.setAttribute("src", foundProduct.gallery2);
+thirdImage.setAttribute("src", foundProduct.gallery3);
+
 
 
 

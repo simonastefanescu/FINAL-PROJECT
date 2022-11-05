@@ -117,18 +117,20 @@ p {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
-.hero-product-details #gallery .Image {
+.hero-product-details #gallery img {
   width: 450px;
   height: 295px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
   transition: all 500ms;
   overflow: hidden;
 }
-.hero-product-details #gallery .Image.tall {
+.hero-product-details #gallery img.tall {
   width: 650px;
   height: 605px;
 }
-.hero-product-details #gallery .Image:hover {
+.hero-product-details #gallery img:hover {
   box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
   transform: translateY(-10px) scale(1.1);
 }

@@ -78,11 +78,16 @@ p {
   position: absolute;
   color: black;
   border-radius: 50%;
-  background-color: #c2dbba;
+  background-color: #054A29;
+  color: #c2dbba;
+  text-align: center;
   padding: 5px;
   top: -20px;
   right: -15px;
   min-width: 30px;
+}
+.hero .container header .shop .shopping-cart .item-count.hide {
+  display: none;
 }
 .hero h2 {
   color: #c2dbba;

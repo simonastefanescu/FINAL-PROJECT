@@ -86,11 +86,16 @@ p {
   position: absolute;
   color: black;
   border-radius: 50%;
-  background-color: #c2dbba;
+  background-color: #054A29;
+  color: #c2dbba;
+  text-align: center;
   padding: 5px;
   top: -20px;
   right: -15px;
   min-width: 30px;
+}
+.hero .container header .shop .shopping-cart .item-count.hide {
+  display: none;
 }
 .hero .container .text {
   display: flex;
@@ -106,6 +111,18 @@ p {
   height: 50px;
   margin-top: 30px;
   background-color: #c2dbba;
+}
+.hero .container .cart-container {
+  width: 300px;
+  height: 500px;
+  background-color: red;
+  position: absolute;
+  top: 105px;
+  right: 50px;
+  z-index: 1;
+}
+.hero .container .cart-container.hide {
+  display: none;
 }
 
 .hero-categories {

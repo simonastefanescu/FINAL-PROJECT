@@ -26,15 +26,30 @@ description.textContent = foundProduct.description
 price.textContent = foundProduct.price + foundProduct.currency
 
 //populating gallery 
-const firstImage=document.getElementById("gallery1");
-const secondImage=document.getElementById("gallery2");
-const thirdImage=document.getElementById("gallery3");
+const firstImage = document.getElementById("gallery1");
+const secondImage = document.getElementById("gallery2");
+const thirdImage = document.getElementById("gallery3");
 
 firstImage.setAttribute("src", foundProduct.gallery1);
 secondImage.setAttribute("src", foundProduct.gallery2);
 thirdImage.setAttribute("src", foundProduct.gallery3);
 
-//set cart in local storage
-const cartCount = document.querySelector('.item-count');
 
-localStorage.setItem('cartCount', cartCount.textContent);
+
+
+
+//button add to cart
+
+const buyButton = document.getElementById("add-cart");
+buyButton.addEventListener("click", () => {
+    const cartCount = document.querySelector('.item-count');
+    if (cartCount.textContent === "0") {
+        cartCount.textContent = 1;
+        cartCount.classList.remove("hide")
+    } else {
+        const prevCount = cartCount.textContent;
+        const prevCountNumber = parseInt(prevCount);
+        cartCount.textContent = prevCountNumber + 1;
+    }
+    localStorage.setItem('cartCount', cartCount.textContent);
+})

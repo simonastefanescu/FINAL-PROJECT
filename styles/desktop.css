@@ -79,6 +79,19 @@ p {
   display: flex;
   gap: 15px;
 }
+.hero .container header .shop .shopping-cart {
+  position: relative;
+}
+.hero .container header .shop .shopping-cart .item-count {
+  position: absolute;
+  color: black;
+  border-radius: 50%;
+  background-color: #c2dbba;
+  padding: 5px;
+  top: -20px;
+  right: -15px;
+  min-width: 30px;
+}
 .hero .container .text {
   display: flex;
   flex-direction: column;

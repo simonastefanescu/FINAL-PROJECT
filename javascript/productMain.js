@@ -34,6 +34,7 @@ firstImage.setAttribute("src", foundProduct.gallery1);
 secondImage.setAttribute("src", foundProduct.gallery2);
 thirdImage.setAttribute("src", foundProduct.gallery3);
 
+//set cart in local storage
+const cartCount = document.querySelector('.item-count');
 
-
-
+localStorage.setItem('cartCount', cartCount.textContent);

@@ -60,8 +60,9 @@ for (let i = 0; i < allProducts.length; i++) {
     quantity.textContent=1
     let remove = document.createElement("span")
     let add = document.createElement("span")
-    remove.classList.add('remove-product');
-    add.classList.add('add-product');
+    remove.setAttribute("id", "remove-product")
+    
+    add.setAttribute("id", "add-product")
     quantity.appendChild(remove)
     quantity.appendChild(add)
     remove.textContent="-"
@@ -71,4 +72,57 @@ for (let i = 0; i < allProducts.length; i++) {
 
 }
 
+//button add to cart
+
+const buyButton = document.getElementById("add-cart");
+buyButton.addEventListener("click", () => {
+    const cartCount = document.querySelector('.item-count');
+    if (cartCount.textContent === "0") {
+        cartCount.textContent = 1;
+        cartCount.classList.remove("hide")
+    } else {
+        const prevCount = cartCount.textContent;
+        const prevCountNumber = parseInt(prevCount);
+        cartCount.textContent = prevCountNumber + 1;
+    }
+    localStorage.setItem('cartCount', cartCount.textContent);
+})
+//button remove from cart
+const removeButton=document.getElementById("remove-product")
+
+removeButton.addEventListener('click', () =>{
+    const cartCount = document.querySelector('.item-count');
+
+    // ascundem cand dam click si count-ul este deja 0
+    if(cartCount.textContent === '0'){
+        return
+    }
+
+    const prevCount = cartCount.textContent;
+    const prevCountNumber = parseInt(prevCount);
+    cartCount.textContent = prevCountNumber - 1;
+
+    // il ascundemm cand count-ul devine 0
+    if(cartCount.textContent === '0'){
+        cartCount.classList.add('hide'); 
+    }
+    
+    localStorage.setItem('cartCount', cartCount.textContent);
+})
+
+//button add quantity
+
+const addQuantity=document.getElementById("add-product")
+addQuantity.addEventListener("click", () => {
+    const cartCount = document.querySelector('.item-count');
+    if (cartCount.textContent === "0") {
+        cartCount.textContent = 1;
+        cartCount.classList.remove("hide")
+    } else {
+        const prevCount = cartCount.textContent;
+        const prevCountNumber = parseInt(prevCount);
+        cartCount.textContent = prevCountNumber + 1;
+    }
+    localStorage.setItem('cartCount', cartCount.textContent);
+})
 

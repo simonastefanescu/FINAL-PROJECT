@@ -38,18 +38,5 @@ thirdImage.setAttribute("src", foundProduct.gallery3);
 
 
 
-//button add to cart
 
-const buyButton = document.getElementById("add-cart");
-buyButton.addEventListener("click", () => {
-    const cartCount = document.querySelector('.item-count');
-    if (cartCount.textContent === "0") {
-        cartCount.textContent = 1;
-        cartCount.classList.remove("hide")
-    } else {
-        const prevCount = cartCount.textContent;
-        const prevCountNumber = parseInt(prevCount);
-        cartCount.textContent = prevCountNumber + 1;
-    }
-    localStorage.setItem('cartCount', cartCount.textContent);
-})
+

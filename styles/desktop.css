@@ -6,6 +6,11 @@ body {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+  border-style: none;
+}
+
 html {
   font-size: 15px;
 }
@@ -111,6 +116,9 @@ p {
   height: 50px;
   margin-top: 30px;
   background-color: #c2dbba;
+  cursor: pointer;
+  border-style: none;
+  color: #054A29;
 }
 .hero .container .cart-container {
   width: 400px;
@@ -160,6 +168,22 @@ p {
   border: 1px solid #054A29;
   width: 100px;
   height: 30px;
+}
+.hero .container .cart-container .total-flex {
+  display: flex;
+  justify-content: space-between;
+  color: #054A29;
+  padding: 0 15px;
+}
+.hero .container .cart-container .checkout {
+  background-color: #054A29;
+  color: #c2dbba;
+  height: 50px;
+  width: 100%;
+  border-style: none;
+  box-shadow: #054A29 0 5px 15px;
+  cursor: pointer;
+  font-size: 1.5rem;
 }
 
 .hero-categories {
@@ -218,6 +242,9 @@ p {
   height: 50px;
   margin-top: 30px;
   background-color: #c2dbba;
+  cursor: pointer;
+  border-style: none;
+  color: #054A29;
 }
 .products .snake-plant {
   background-image: url("/images/test.jpg");
@@ -238,6 +265,9 @@ p {
   height: 50px;
   margin-top: 30px;
   background-color: #c2dbba;
+  cursor: pointer;
+  border-style: none;
+  color: #054A29;
 }
 .products .pothos {
   height: 250px;
@@ -268,6 +298,9 @@ p {
   height: 50px;
   margin-top: 30px;
   background-color: #c2dbba;
+  cursor: pointer;
+  border-style: none;
+  color: #054A29;
 }
 
 .shop-description {

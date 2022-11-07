@@ -6,6 +6,11 @@ body {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+  border-style: none;
+}
+
 html {
   font-size: 15px;
 }

@@ -94,6 +94,71 @@ p {
 .hero .container header .shop .shopping-cart .item-count.hide {
   display: none;
 }
+.hero .container .cart-container {
+  width: 400px;
+  height: 600px;
+  background-color: #c2dbba;
+  position: absolute;
+  top: 105px;
+  right: 50px;
+  z-index: 1;
+}
+.hero .container .cart-container.hide {
+  display: none;
+}
+.hero .container .cart-container .cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  color: #054A29;
+  box-shadow: #054A29 0 5px 15px;
+}
+.hero .container .cart-container .cart-content {
+  color: #054A29;
+}
+.hero .container .cart-container .cart-content ul {
+  list-style: none;
+  padding: 0 15px;
+}
+.hero .container .cart-container .cart-content ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+.hero .container .cart-container .cart-content ul li img {
+  width: 50px;
+  height: 50px;
+}
+.hero .container .cart-container .cart-content ul li button {
+  background-color: #c2dbba;
+  color: #054A29;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #054A29;
+  width: 100px;
+  height: 30px;
+}
+.hero .container .cart-container .total-flex {
+  display: flex;
+  justify-content: space-between;
+  color: #054A29;
+  padding: 0 15px;
+}
+.hero .container .cart-container .checkout {
+  background-color: #054A29;
+  color: #c2dbba;
+  height: 50px;
+  width: 100%;
+  border-style: none;
+  box-shadow: #054A29 0 5px 15px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
 .hero h2 {
   color: #c2dbba;
   text-align: center;

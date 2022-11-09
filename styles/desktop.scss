@@ -25,11 +25,12 @@
 
 
         header {
+            
             display: flex;
             align-items: center;
             justify-content: space-between;
             border-bottom: 1px solid rgba(194, 219, 186, 0.3);
-
+            
             .logo {
                 width: 100px;
                 height: 100px;
@@ -41,6 +42,7 @@
 
             nav {
                 display: block;
+                
 
                 ul {
                     list-style: none;
@@ -143,6 +145,7 @@
                 color: $green6;
                 box-shadow: $green6 0 5px 15px;
 
+
             }
 
             .cart-content {
@@ -230,8 +233,8 @@
             background-color: $green4;
             border-radius: 20px;
             text-align: center;
-            
-            
+
+
 
             img {
                 position: absolute;

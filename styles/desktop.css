@@ -199,7 +199,7 @@ p {
   position: relative;
   width: 340px;
   height: 190px;
-  background-color: add;
+  background-color: #397D54;
   border-radius: 20px;
   text-align: center;
 }
@@ -290,7 +290,7 @@ p {
   align-items: flex-start;
   width: 49%;
   color: #73C088;
-  background-color: add;
+  background-color: #397D54;
   border-radius: 20px;
   padding: 30px;
 }

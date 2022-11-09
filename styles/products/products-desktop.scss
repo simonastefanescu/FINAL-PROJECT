@@ -60,22 +60,24 @@
             .shop {
                 display: flex;
                 gap: 15px;
+
                 .shopping-cart {
                     position: relative;
-                    .item-count{
+
+                    .item-count {
                         position: absolute;
                         color: black;
                         border-radius: 50%;
                         background-color: $green6;
                         color: $tea-green;
                         text-align: center;
-                        
+
                         padding: 5px;
                         top: -20px;
                         right: -15px;
                         min-width: 30px;
-    
-                        &.hide{
+
+                        &.hide {
                             display: none;
                         }
                     }
@@ -83,7 +85,7 @@
             }
 
         }
-      
+
 
 
 
@@ -212,6 +214,18 @@ footer {
                 list-style: none;
                 display: flex;
                 gap: 15px;
+
+                li {
+                    a {
+                        color: $tea-green;
+                        text-decoration: none;
+
+                        &:active,
+                        &:visited {
+                            color: $tea-green
+                        }
+                    }
+                }
             }
         }
 

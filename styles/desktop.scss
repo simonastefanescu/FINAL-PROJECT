@@ -124,13 +124,14 @@
 
         .cart-container {
             width: 400px;
-            height: 600px;
+            height: 670px;
             background-color: $tea-green;
             // display: none;
             position: absolute;
-            top: 105px;
+            top: 70px;
             right: 50px;
             z-index: 1;
+            border-radius: 20px;
 
 
             &.hide {

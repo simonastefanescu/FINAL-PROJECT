@@ -308,6 +308,17 @@ footer {
                 list-style: none;
                 display: flex;
                 gap: 15px;
+                li {
+                    a {
+                        color: $tea-green;
+                        text-decoration: none;
+
+                        &:active,
+                        &:visited {
+                            color: $tea-green
+                        }
+                    }
+                }
             }
         }
 

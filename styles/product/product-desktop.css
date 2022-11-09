@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -30,6 +31,11 @@ h3 {
 
 p {
   font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  font-family: "Indie Flower", cursive;
+  font-size: 1.2rem;
 }
 
 .hero {
@@ -268,6 +274,13 @@ footer .nav-footer nav ul {
   list-style: none;
   display: flex;
   gap: 15px;
+}
+footer .nav-footer nav ul li a {
+  color: #c2dbba;
+  text-decoration: none;
+}
+footer .nav-footer nav ul li a:active, footer .nav-footer nav ul li a:visited {
+  color: #c2dbba;
 }
 footer .final-description {
   display: flex;

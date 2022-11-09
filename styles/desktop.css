@@ -199,7 +199,7 @@ p {
   position: relative;
   width: 340px;
   height: 190px;
-  background-color: #397D54;
+  background-color: add;
   border-radius: 20px;
   text-align: center;
 }
@@ -212,6 +212,7 @@ p {
 }
 .hero-categories .categories .category h4 {
   padding-top: 120px;
+  color: #054A29;
 }
 
 .products {
@@ -289,7 +290,7 @@ p {
   align-items: flex-start;
   width: 49%;
   color: #73C088;
-  background-color: #397D54;
+  background-color: add;
   border-radius: 20px;
   padding: 30px;
 }
